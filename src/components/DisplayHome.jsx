@@ -19,7 +19,7 @@ const DisplayHome = () => {
 
       <div className='mb-4'>
         <h1 className='my-5 font-bold text-2xl'>Biggest Hits</h1>
-        <div className='flex overflow-auto no-horizontal-scroll'>
+        <div className='flex overflow-auto scrollbar-hide'>
        {songsData.map((item, index)=>(<SongItem key={index} name={item.name} image={item.image} desc={item.desc} id={item.id} />))}
         </div>
       </div>

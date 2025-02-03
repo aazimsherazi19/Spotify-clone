@@ -14,14 +14,38 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #777; 
   }
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome, Safari */
-  }
   
-  .scrollbar-hide {
-    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
+@media (max-width: 768px) {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
   }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+
+@media (min-width: 769px) {
+  .scrollbar-hide::-webkit-scrollbar {
+    height: 5px; 
+  }
+
+  .scrollbar-hide::-webkit-scrollbar-track {
+    background: #222; 
+    border-radius: 10px;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar-thumb {
+    background: #555; 
+    border-radius: 10px;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar-thumb:hover {
+    background: #777; 
+  }
+}
+
 
   
 
